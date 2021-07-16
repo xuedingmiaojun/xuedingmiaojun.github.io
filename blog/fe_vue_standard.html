@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue项目前端规范 | 薛定喵君</title>
+    <meta name="description" content="薛定喵君的博客">
+    <link rel="icon" href="/images/favicon.ico">
+  <link rel="manifest" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/favicon.ico">
+  <meta http-quiv="pragma" cotent="no-cache">
+  <meta http-quiv="pragma" cotent="no-cache,must-revalidate">
+  <meta http-quiv="expires" cotent="0">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://js.users.51.la/19828725.js"></script>
+  <script src="//quote.51.la/q?id=19828725&amp;mb=1"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script data-ad-client="ca-pub-8805637888232650" async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <link rel="preload" href="/assets/css/0.styles.cee111f8.css" as="style"><link rel="preload" href="/assets/js/app.47b5db94.js" as="script"><link rel="preload" href="/assets/js/18.b7fe2699.js" as="script"><link rel="preload" href="/assets/js/9.7c76d012.js" as="script"><link rel="preload" href="/assets/js/35.b0ffd568.js" as="script"><link rel="preload" href="/assets/js/53.5b971407.js" as="script"><link rel="preload" href="/assets/js/45.ecd9ee2b.js" as="script"><link rel="preload" href="/assets/js/113.268793e4.js" as="script"><link rel="preload" href="/assets/js/62.615af82f.js" as="script"><link rel="preload" href="/assets/js/7.b045ac4a.js" as="script"><link rel="prefetch" href="/assets/js/1.02689489.js"><link rel="prefetch" href="/assets/js/10.eb28c792.js"><link rel="prefetch" href="/assets/js/100.55c422d9.js"><link rel="prefetch" href="/assets/js/101.6fcfc58b.js"><link rel="prefetch" href="/assets/js/102.32a0b14a.js"><link rel="prefetch" href="/assets/js/103.f126e665.js"><link rel="prefetch" href="/assets/js/104.7e38d951.js"><link rel="prefetch" href="/assets/js/105.7c1985bd.js"><link rel="prefetch" href="/assets/js/106.b9dcb183.js"><link rel="prefetch" href="/assets/js/107.cae266eb.js"><link rel="prefetch" href="/assets/js/108.8978a3a7.js"><link rel="prefetch" href="/assets/js/109.bae3d849.js"><link rel="prefetch" href="/assets/js/11.38cb2784.js"><link rel="prefetch" href="/assets/js/110.59e80d4c.js"><link rel="prefetch" href="/assets/js/111.29fd0e95.js"><link rel="prefetch" href="/assets/js/112.a963f83e.js"><link rel="prefetch" href="/assets/js/114.47a67db9.js"><link rel="prefetch" href="/assets/js/115.3ea7a78b.js"><link rel="prefetch" href="/assets/js/116.4f47b034.js"><link rel="prefetch" href="/assets/js/117.abe97491.js"><link rel="prefetch" href="/assets/js/118.7e27a7a1.js"><link rel="prefetch" href="/assets/js/119.a928c181.js"><link rel="prefetch" href="/assets/js/12.cfc41df3.js"><link rel="prefetch" href="/assets/js/120.df0368af.js"><link rel="prefetch" href="/assets/js/121.ec43a671.js"><link rel="prefetch" href="/assets/js/122.6e0f0189.js"><link rel="prefetch" href="/assets/js/123.10219c9b.js"><link rel="prefetch" href="/assets/js/124.82d32f00.js"><link rel="prefetch" href="/assets/js/125.6add89d1.js"><link rel="prefetch" href="/assets/js/126.2f7584f0.js"><link rel="prefetch" href="/assets/js/127.7632a00b.js"><link rel="prefetch" href="/assets/js/128.15bd219e.js"><link rel="prefetch" href="/assets/js/129.2d840b50.js"><link rel="prefetch" href="/assets/js/13.49d9a5aa.js"><link rel="prefetch" href="/assets/js/130.0e1610ee.js"><link rel="prefetch" href="/assets/js/131.1cd51453.js"><link rel="prefetch" href="/assets/js/132.508f60c5.js"><link rel="prefetch" href="/assets/js/133.9fd50515.js"><link rel="prefetch" href="/assets/js/134.539592b5.js"><link rel="prefetch" href="/assets/js/135.0a69ebf2.js"><link rel="prefetch" href="/assets/js/136.ca0f3e16.js"><link rel="prefetch" href="/assets/js/137.f35d17b8.js"><link rel="prefetch" href="/assets/js/138.c37599b6.js"><link rel="prefetch" href="/assets/js/139.4dfbfdc6.js"><link rel="prefetch" href="/assets/js/14.4372c840.js"><link rel="prefetch" href="/assets/js/140.b497e226.js"><link rel="prefetch" href="/assets/js/141.f6be486d.js"><link rel="prefetch" href="/assets/js/142.da81d9c3.js"><link rel="prefetch" href="/assets/js/143.9794cc07.js"><link rel="prefetch" href="/assets/js/144.f5039cb8.js"><link rel="prefetch" href="/assets/js/145.43951cb9.js"><link rel="prefetch" href="/assets/js/146.4e544886.js"><link rel="prefetch" href="/assets/js/147.4e6ace2f.js"><link rel="prefetch" href="/assets/js/148.590676c0.js"><link rel="prefetch" href="/assets/js/149.6d2d34b0.js"><link rel="prefetch" href="/assets/js/15.3f7c9bc6.js"><link rel="prefetch" href="/assets/js/150.ffe65c17.js"><link rel="prefetch" href="/assets/js/151.09b9b1ae.js"><link rel="prefetch" href="/assets/js/152.2a8f4cf9.js"><link rel="prefetch" href="/assets/js/153.e04e00d5.js"><link rel="prefetch" href="/assets/js/154.bff8500e.js"><link rel="prefetch" href="/assets/js/155.497a77b9.js"><link rel="prefetch" href="/assets/js/156.94d0b09e.js"><link rel="prefetch" href="/assets/js/157.fc66521a.js"><link rel="prefetch" href="/assets/js/158.1b86f4dd.js"><link rel="prefetch" href="/assets/js/159.97b37377.js"><link rel="prefetch" href="/assets/js/16.ea8fa2ca.js"><link rel="prefetch" href="/assets/js/160.e2686568.js"><link rel="prefetch" href="/assets/js/161.5d4e2d3d.js"><link rel="prefetch" href="/assets/js/162.6dd28a13.js"><link rel="prefetch" href="/assets/js/163.adfa7b24.js"><link rel="prefetch" href="/assets/js/164.85e45935.js"><link rel="prefetch" href="/assets/js/165.fd813904.js"><link rel="prefetch" href="/assets/js/166.27aaa685.js"><link rel="prefetch" href="/assets/js/167.07b28ae5.js"><link rel="prefetch" href="/assets/js/168.cceaf39c.js"><link rel="prefetch" href="/assets/js/169.09091bd3.js"><link rel="prefetch" href="/assets/js/17.07146aa0.js"><link rel="prefetch" href="/assets/js/170.a5eb58cb.js"><link rel="prefetch" href="/assets/js/171.b5075d7f.js"><link rel="prefetch" href="/assets/js/172.c7d33795.js"><link rel="prefetch" href="/assets/js/173.bdda6896.js"><link rel="prefetch" href="/assets/js/174.cd10b1a7.js"><link rel="prefetch" href="/assets/js/175.8845a3d0.js"><link rel="prefetch" href="/assets/js/176.cc7d5f66.js"><link rel="prefetch" href="/assets/js/177.7534c55d.js"><link rel="prefetch" href="/assets/js/178.63405ba0.js"><link rel="prefetch" href="/assets/js/179.9ae3e32d.js"><link rel="prefetch" href="/assets/js/180.5e4615ba.js"><link rel="prefetch" href="/assets/js/181.c74e2674.js"><link rel="prefetch" href="/assets/js/182.43aa0c52.js"><link rel="prefetch" href="/assets/js/183.77016f3d.js"><link rel="prefetch" href="/assets/js/184.67b24faa.js"><link rel="prefetch" href="/assets/js/185.de7daeb0.js"><link rel="prefetch" href="/assets/js/186.6b3dd444.js"><link rel="prefetch" href="/assets/js/187.16cdf0ba.js"><link rel="prefetch" href="/assets/js/188.5bdf5a83.js"><link rel="prefetch" href="/assets/js/189.99e709c3.js"><link rel="prefetch" href="/assets/js/19.6d955554.js"><link rel="prefetch" href="/assets/js/190.a76bfe2a.js"><link rel="prefetch" href="/assets/js/191.1fb52b3a.js"><link rel="prefetch" href="/assets/js/192.73c27fc3.js"><link rel="prefetch" href="/assets/js/193.d47f15d6.js"><link rel="prefetch" href="/assets/js/194.73eae470.js"><link rel="prefetch" href="/assets/js/195.97656386.js"><link rel="prefetch" href="/assets/js/196.2b2fae7e.js"><link rel="prefetch" href="/assets/js/197.a66e9d04.js"><link rel="prefetch" href="/assets/js/198.2e1f3dd9.js"><link rel="prefetch" href="/assets/js/199.2ded9151.js"><link rel="prefetch" href="/assets/js/2.819c96a7.js"><link rel="prefetch" href="/assets/js/20.2e2ee234.js"><link rel="prefetch" href="/assets/js/200.5499146c.js"><link rel="prefetch" href="/assets/js/201.15861439.js"><link rel="prefetch" href="/assets/js/202.ab62c198.js"><link rel="prefetch" href="/assets/js/203.4fffee2b.js"><link rel="prefetch" href="/assets/js/204.e6560bb8.js"><link rel="prefetch" href="/assets/js/205.f398ccd4.js"><link rel="prefetch" href="/assets/js/206.265f17b3.js"><link rel="prefetch" href="/assets/js/207.a2d5c51c.js"><link rel="prefetch" href="/assets/js/208.e555a7e2.js"><link rel="prefetch" href="/assets/js/209.6cd5855a.js"><link rel="prefetch" href="/assets/js/21.a4988d32.js"><link rel="prefetch" href="/assets/js/210.43fb7cf9.js"><link rel="prefetch" href="/assets/js/211.4e7da82e.js"><link rel="prefetch" href="/assets/js/212.dc0b22ac.js"><link rel="prefetch" href="/assets/js/213.fceb389b.js"><link rel="prefetch" href="/assets/js/214.71158114.js"><link rel="prefetch" href="/assets/js/215.3f10d051.js"><link rel="prefetch" href="/assets/js/216.163bf7c9.js"><link rel="prefetch" href="/assets/js/217.b1930568.js"><link rel="prefetch" href="/assets/js/218.6eb963a7.js"><link rel="prefetch" href="/assets/js/219.a7b8507c.js"><link rel="prefetch" href="/assets/js/22.b3e06f70.js"><link rel="prefetch" href="/assets/js/220.ff724dee.js"><link rel="prefetch" href="/assets/js/221.548a66ee.js"><link rel="prefetch" href="/assets/js/222.a2a9d357.js"><link rel="prefetch" href="/assets/js/223.96c31d6c.js"><link rel="prefetch" href="/assets/js/224.9a5be105.js"><link rel="prefetch" href="/assets/js/225.3ffeb5ca.js"><link rel="prefetch" href="/assets/js/226.2e96d110.js"><link rel="prefetch" href="/assets/js/227.9a8d518f.js"><link rel="prefetch" href="/assets/js/228.6abb54dd.js"><link rel="prefetch" href="/assets/js/229.82a63546.js"><link rel="prefetch" href="/assets/js/23.c1320e7c.js"><link rel="prefetch" href="/assets/js/230.c3cd76d5.js"><link rel="prefetch" href="/assets/js/231.9985dc21.js"><link rel="prefetch" href="/assets/js/232.4c359044.js"><link rel="prefetch" href="/assets/js/233.42d9b1df.js"><link rel="prefetch" href="/assets/js/234.78116fab.js"><link rel="prefetch" href="/assets/js/235.9e5464f9.js"><link rel="prefetch" href="/assets/js/236.15212242.js"><link rel="prefetch" href="/assets/js/237.9847aa69.js"><link rel="prefetch" href="/assets/js/238.73ac8b98.js"><link rel="prefetch" href="/assets/js/239.246a08c6.js"><link rel="prefetch" href="/assets/js/24.b72bf9c6.js"><link rel="prefetch" href="/assets/js/240.ac413241.js"><link rel="prefetch" href="/assets/js/241.572dc593.js"><link rel="prefetch" href="/assets/js/242.0ed90aec.js"><link rel="prefetch" href="/assets/js/243.4424a311.js"><link rel="prefetch" href="/assets/js/244.350aefc5.js"><link rel="prefetch" href="/assets/js/245.c310db99.js"><link rel="prefetch" href="/assets/js/246.d6d2f27d.js"><link rel="prefetch" href="/assets/js/247.8a83f7c3.js"><link rel="prefetch" href="/assets/js/248.9fb08698.js"><link rel="prefetch" href="/assets/js/249.6da85052.js"><link rel="prefetch" href="/assets/js/25.e87e37e7.js"><link rel="prefetch" href="/assets/js/250.fda6518d.js"><link rel="prefetch" href="/assets/js/251.43b0fae0.js"><link rel="prefetch" href="/assets/js/252.dc97eea3.js"><link rel="prefetch" href="/assets/js/253.d139e364.js"><link rel="prefetch" href="/assets/js/254.529200a8.js"><link rel="prefetch" href="/assets/js/255.f591bac6.js"><link rel="prefetch" href="/assets/js/256.b030a067.js"><link rel="prefetch" href="/assets/js/257.1ffd865b.js"><link rel="prefetch" href="/assets/js/258.fbd6fc2f.js"><link rel="prefetch" href="/assets/js/259.5a30b137.js"><link rel="prefetch" href="/assets/js/26.9410dd52.js"><link rel="prefetch" href="/assets/js/260.140d0504.js"><link rel="prefetch" href="/assets/js/261.3b99610d.js"><link rel="prefetch" href="/assets/js/262.a1680330.js"><link rel="prefetch" href="/assets/js/263.89795fa0.js"><link rel="prefetch" href="/assets/js/264.6eebb7ab.js"><link rel="prefetch" href="/assets/js/265.b40e9be2.js"><link rel="prefetch" href="/assets/js/266.144c75d8.js"><link rel="prefetch" href="/assets/js/267.f85fe8c8.js"><link rel="prefetch" href="/assets/js/268.28570eb0.js"><link rel="prefetch" href="/assets/js/269.ccee6ab7.js"><link rel="prefetch" href="/assets/js/27.0f81cc9c.js"><link rel="prefetch" href="/assets/js/270.a0edacd2.js"><link rel="prefetch" href="/assets/js/271.f758cb80.js"><link rel="prefetch" href="/assets/js/272.34dc0be7.js"><link rel="prefetch" href="/assets/js/273.16cc9e7b.js"><link rel="prefetch" href="/assets/js/274.5c430087.js"><link rel="prefetch" href="/assets/js/275.b5ea51fe.js"><link rel="prefetch" href="/assets/js/276.9a3672a0.js"><link rel="prefetch" href="/assets/js/277.f1945ab4.js"><link rel="prefetch" href="/assets/js/278.69d1983a.js"><link rel="prefetch" href="/assets/js/279.24a410c1.js"><link rel="prefetch" href="/assets/js/28.fa949a8a.js"><link rel="prefetch" href="/assets/js/280.ee27295f.js"><link rel="prefetch" href="/assets/js/281.39ce7182.js"><link rel="prefetch" href="/assets/js/282.3fc616bd.js"><link rel="prefetch" href="/assets/js/283.2c5332d3.js"><link rel="prefetch" href="/assets/js/284.09182bc3.js"><link rel="prefetch" href="/assets/js/285.beea6734.js"><link rel="prefetch" href="/assets/js/286.58cbfaef.js"><link rel="prefetch" href="/assets/js/287.2b40bb21.js"><link rel="prefetch" href="/assets/js/288.5a14c10b.js"><link rel="prefetch" href="/assets/js/289.6cfab471.js"><link rel="prefetch" href="/assets/js/29.36c6c6c1.js"><link rel="prefetch" href="/assets/js/290.4b52753d.js"><link rel="prefetch" href="/assets/js/291.929ce561.js"><link rel="prefetch" href="/assets/js/292.9aa7538f.js"><link rel="prefetch" href="/assets/js/293.89fe5745.js"><link rel="prefetch" href="/assets/js/294.460e7949.js"><link rel="prefetch" href="/assets/js/295.41f181ee.js"><link rel="prefetch" href="/assets/js/296.fa74a913.js"><link rel="prefetch" href="/assets/js/297.d9dedf42.js"><link rel="prefetch" href="/assets/js/298.aee55276.js"><link rel="prefetch" href="/assets/js/299.ba90a3d2.js"><link rel="prefetch" href="/assets/js/3.79abce1a.js"><link rel="prefetch" href="/assets/js/30.460f3bf1.js"><link rel="prefetch" href="/assets/js/300.ce23ef4f.js"><link rel="prefetch" href="/assets/js/301.65268b01.js"><link rel="prefetch" href="/assets/js/302.755aba03.js"><link rel="prefetch" href="/assets/js/303.7c66bb4e.js"><link rel="prefetch" href="/assets/js/304.3d8dd2fc.js"><link rel="prefetch" href="/assets/js/305.71cd01a7.js"><link rel="prefetch" href="/assets/js/306.a350d99d.js"><link rel="prefetch" href="/assets/js/307.ab0571d9.js"><link rel="prefetch" href="/assets/js/308.baf7297a.js"><link rel="prefetch" href="/assets/js/309.0f28bb87.js"><link rel="prefetch" href="/assets/js/31.478c7325.js"><link rel="prefetch" href="/assets/js/310.627ccbc9.js"><link rel="prefetch" href="/assets/js/311.8f7f8e25.js"><link rel="prefetch" href="/assets/js/312.5f1f9e7d.js"><link rel="prefetch" href="/assets/js/313.32054933.js"><link rel="prefetch" href="/assets/js/314.bfb4c23f.js"><link rel="prefetch" href="/assets/js/315.270db602.js"><link rel="prefetch" href="/assets/js/316.6c53c4d0.js"><link rel="prefetch" href="/assets/js/317.730ceed4.js"><link rel="prefetch" href="/assets/js/318.db98ee4a.js"><link rel="prefetch" href="/assets/js/319.ef259a98.js"><link rel="prefetch" href="/assets/js/32.9ce1bc7b.js"><link rel="prefetch" href="/assets/js/320.9ba92489.js"><link rel="prefetch" href="/assets/js/321.66ee83ae.js"><link rel="prefetch" href="/assets/js/322.3ed507f1.js"><link rel="prefetch" href="/assets/js/323.7e375cbe.js"><link rel="prefetch" href="/assets/js/324.414dfe10.js"><link rel="prefetch" href="/assets/js/325.7893b1c8.js"><link rel="prefetch" href="/assets/js/326.9f06ae71.js"><link rel="prefetch" href="/assets/js/327.179284f7.js"><link rel="prefetch" href="/assets/js/328.f8920b66.js"><link rel="prefetch" href="/assets/js/329.12afc549.js"><link rel="prefetch" href="/assets/js/33.9136be19.js"><link rel="prefetch" href="/assets/js/330.733958e6.js"><link rel="prefetch" href="/assets/js/331.4e6cf3a2.js"><link rel="prefetch" href="/assets/js/332.001630ca.js"><link rel="prefetch" href="/assets/js/333.4050e5e2.js"><link rel="prefetch" href="/assets/js/334.625e5b3d.js"><link rel="prefetch" href="/assets/js/335.2cdce1cc.js"><link rel="prefetch" href="/assets/js/336.b29319d8.js"><link rel="prefetch" href="/assets/js/337.17cc04aa.js"><link rel="prefetch" href="/assets/js/338.4c862e90.js"><link rel="prefetch" href="/assets/js/339.302c6ea3.js"><link rel="prefetch" href="/assets/js/34.c85888b7.js"><link rel="prefetch" href="/assets/js/340.927d563f.js"><link rel="prefetch" href="/assets/js/341.01bed2e2.js"><link rel="prefetch" href="/assets/js/342.e555084f.js"><link rel="prefetch" href="/assets/js/343.cc600a48.js"><link rel="prefetch" href="/assets/js/344.98ee76fa.js"><link rel="prefetch" href="/assets/js/345.1ba0e042.js"><link rel="prefetch" href="/assets/js/346.c602ffdf.js"><link rel="prefetch" href="/assets/js/347.e454dbee.js"><link rel="prefetch" href="/assets/js/348.1b3eaa10.js"><link rel="prefetch" href="/assets/js/349.dbc33fae.js"><link rel="prefetch" href="/assets/js/350.fa8af834.js"><link rel="prefetch" href="/assets/js/351.f8a5203b.js"><link rel="prefetch" href="/assets/js/352.b871e333.js"><link rel="prefetch" href="/assets/js/353.bb3b46dd.js"><link rel="prefetch" href="/assets/js/354.9c6ac677.js"><link rel="prefetch" href="/assets/js/355.9469aad4.js"><link rel="prefetch" href="/assets/js/356.e51eed04.js"><link rel="prefetch" href="/assets/js/357.e783f618.js"><link rel="prefetch" href="/assets/js/358.21b45bb9.js"><link rel="prefetch" href="/assets/js/359.973bcb12.js"><link rel="prefetch" href="/assets/js/36.588a082a.js"><link rel="prefetch" href="/assets/js/360.6377abea.js"><link rel="prefetch" href="/assets/js/361.d4f730b0.js"><link rel="prefetch" href="/assets/js/362.89f76e4d.js"><link rel="prefetch" href="/assets/js/363.a8192c83.js"><link rel="prefetch" href="/assets/js/364.5d1c253c.js"><link rel="prefetch" href="/assets/js/365.950eab9a.js"><link rel="prefetch" href="/assets/js/37.37cfbaef.js"><link rel="prefetch" href="/assets/js/38.fb1fcc1e.js"><link rel="prefetch" href="/assets/js/39.4d747b42.js"><link rel="prefetch" href="/assets/js/40.06a16610.js"><link rel="prefetch" href="/assets/js/41.ab99733b.js"><link rel="prefetch" href="/assets/js/42.c36e9613.js"><link rel="prefetch" href="/assets/js/43.10145df8.js"><link rel="prefetch" href="/assets/js/44.6b71d39f.js"><link rel="prefetch" href="/assets/js/46.99c74e2f.js"><link rel="prefetch" href="/assets/js/47.bb62147e.js"><link rel="prefetch" href="/assets/js/48.8e886bc5.js"><link rel="prefetch" href="/assets/js/49.bccf0ee6.js"><link rel="prefetch" href="/assets/js/50.fefd4251.js"><link rel="prefetch" href="/assets/js/51.a403fb10.js"><link rel="prefetch" href="/assets/js/52.c26b2681.js"><link rel="prefetch" href="/assets/js/54.4eb0ae10.js"><link rel="prefetch" href="/assets/js/55.6b532404.js"><link rel="prefetch" href="/assets/js/56.d833ddbf.js"><link rel="prefetch" href="/assets/js/57.e6c9434d.js"><link rel="prefetch" href="/assets/js/58.8939e1f5.js"><link rel="prefetch" href="/assets/js/59.c8617a9d.js"><link rel="prefetch" href="/assets/js/6.341bc0a6.js"><link rel="prefetch" href="/assets/js/60.69d31018.js"><link rel="prefetch" href="/assets/js/61.4bc81787.js"><link rel="prefetch" href="/assets/js/63.4df2e76f.js"><link rel="prefetch" href="/assets/js/64.f08e2568.js"><link rel="prefetch" href="/assets/js/65.c1ac2a0a.js"><link rel="prefetch" href="/assets/js/66.aa5c47fd.js"><link rel="prefetch" href="/assets/js/67.6daf9a6a.js"><link rel="prefetch" href="/assets/js/68.b87a7ce9.js"><link rel="prefetch" href="/assets/js/69.41d602cf.js"><link rel="prefetch" href="/assets/js/70.68ad8b80.js"><link rel="prefetch" href="/assets/js/71.8e72a7e7.js"><link rel="prefetch" href="/assets/js/72.b64ddffa.js"><link rel="prefetch" href="/assets/js/73.099c7b12.js"><link rel="prefetch" href="/assets/js/74.cd07ffa4.js"><link rel="prefetch" href="/assets/js/75.087100b1.js"><link rel="prefetch" href="/assets/js/76.a88d088d.js"><link rel="prefetch" href="/assets/js/77.9338ef86.js"><link rel="prefetch" href="/assets/js/78.4540a1b2.js"><link rel="prefetch" href="/assets/js/79.4c52ca58.js"><link rel="prefetch" href="/assets/js/8.289330c1.js"><link rel="prefetch" href="/assets/js/80.c98af035.js"><link rel="prefetch" href="/assets/js/81.c34940fe.js"><link rel="prefetch" href="/assets/js/82.1032f715.js"><link rel="prefetch" href="/assets/js/83.b3a1b28a.js"><link rel="prefetch" href="/assets/js/84.a2c3c333.js"><link rel="prefetch" href="/assets/js/85.568c1dfc.js"><link rel="prefetch" href="/assets/js/86.7039a5cb.js"><link rel="prefetch" href="/assets/js/87.c34ac902.js"><link rel="prefetch" href="/assets/js/88.5dd3817e.js"><link rel="prefetch" href="/assets/js/89.f6c50661.js"><link rel="prefetch" href="/assets/js/90.d160cafd.js"><link rel="prefetch" href="/assets/js/91.6861c4a9.js"><link rel="prefetch" href="/assets/js/92.b2c38a94.js"><link rel="prefetch" href="/assets/js/93.ed35b348.js"><link rel="prefetch" href="/assets/js/94.c7a0c24a.js"><link rel="prefetch" href="/assets/js/95.57587370.js"><link rel="prefetch" href="/assets/js/96.5a5f09fc.js"><link rel="prefetch" href="/assets/js/97.ffeb7c56.js"><link rel="prefetch" href="/assets/js/98.a4f6299b.js"><link rel="prefetch" href="/assets/js/99.34cac702.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.b65a90a2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cee111f8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme"><header class="navbar"><div class="nav-header"><div class="menu-box" data-v-06e8adae><ul data-v-06e8adae><li data-v-06e8adae><a href="/" class="router-link-active" data-v-06e8adae>推荐</a></li><li data-v-06e8adae><a href="/recommended/" data-v-06e8adae>开源软件</a></li><li data-v-06e8adae><a href="/download_res/" data-v-06e8adae>干货下载</a></li><li data-v-06e8adae><a href="/tag/微信公众号.html" data-v-06e8adae>公众号开发</a></li><li data-v-06e8adae><a href="/tag/产品笔记.html" data-v-06e8adae>产品笔记</a></li><li data-v-06e8adae><a href="/tag/商业思维.html" data-v-06e8adae>商业思维</a></li><li data-v-06e8adae><a href="/xcx_study/" data-v-06e8adae>小程序开发</a></li><li data-v-06e8adae><a href="/tag/云开发.html" data-v-06e8adae>云开发</a></li><li data-v-06e8adae><a href="/tag/uniapp.html" data-v-06e8adae>uni-app</a></li><li data-v-06e8adae><a href="/tag/vue.html" data-v-06e8adae>vue</a></li><li data-v-06e8adae><a href="/tag/git.html" data-v-06e8adae>git技巧</a></li><li data-v-06e8adae><a href="/tag/nodejs.html" data-v-06e8adae>nodejs</a></li><li data-v-06e8adae><a href="/tag/服务器.html" data-v-06e8adae>服务器</a></li></ul></div> <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/site_icon.png" class="logo"> <span class="site-name can-hide">薛定喵君</span></a> <nav class="nav-links can-hide"><ul class="nav-ul"><li class="nav-item"><a href="/" class="nav-link">博客</a></li><li class="nav-item"><a href="/others/" class="nav-link">微码</a></li><li class="nav-item"><a href="/tags/" class="nav-link">标签云</a></li><li class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      资讯
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/science_lover/" class="nav-link">科技爱好者周刊</a></li><li class="dropdown-item"><!----> <a href="/clouds/" class="nav-link">云主机推荐</a></li></ul></div></li><li class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link">关于博主</a></li><li class="dropdown-item"><!----> <a href="/toy/" class="nav-link">作品集</a></li><li class="dropdown-item"><!----> <a href="/leave_msg/" class="nav-link">留言</a></li></ul></div></li><li class="nav-item"><a href="/flink/" class="nav-link">友链</a></li><li class="nav-item"><a href="/site_navigation/" class="nav-link">网址导航</a></li></ul></nav> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div></header> <div class="sidebar-mask"></div> <!----> <div class="layout-container"><div class="main"><div class="layout-inner"><div class="card"><div class="content-header"><h1 class="page-title">vue项目前端规范</h1> <span class="page-timestamp">2020-03-27 22:07:06</span></div> <div id="main-content"><div class="content__default"><p>前端 vue 开发规范笔记<br></p> <p></p><div class="table-of-contents"><ul><li><a href="#命名规范">命名规范</a></li><li><a href="#组件">组件</a></li><li><a href="#method方法命名">method方法命名</a></li><li><a href="#views下文件命名">views下文件命名</a></li><li><a href="#props-命名">props 命名</a></li><li><a href="#目录文件夹及子文件规范">目录文件夹及子文件规范</a></li><li><a href="#vue文件基本结构">vue文件基本结构</a></li><li><a href="#多个特性的元素规范">多个特性的元素规范</a></li><li><a href="#元素特性顺序">元素特性顺序</a></li><li><a href="#组件选项顺序">组件选项顺序</a></li><li><a href="#注释规范">注释规范</a></li><li><a href="#编码规范">编码规范</a></li><li><a href="#指令规范">指令规范</a></li><li><a href="#props-规范">Props 规范</a></li><li><a href="#css-规范">CSS 规范</a></li><li><a href="#sass-规范">SASS 规范</a></li><li><a href="#特殊规范">特殊规范</a></li></ul></div><p></p> <h3 id="命名规范"><a href="#命名规范" aria-hidden="true" class="header-anchor">#</a> 命名规范</h3> <p>普通变量</p> <ul><li>方法:驼峰命名</li> <li>规范
+<ul><li>跟需求的内容相关</li> <li>复数的时候需要加s</li></ul></li></ul> <p>常量</p> <ul><li>方法:全部大写</li> <li>规范:使用大写字母和下划线来组合命名，下划线分割单词</li></ul> <h3 id="组件"><a href="#组件" aria-hidden="true" class="header-anchor">#</a> 组件</h3> <p>官方文档推荐及使用遵循规则:</p> <ul><li>PascalCase (单词首字母大写命名)是最通用的声明约定</li> <li>kebab-case (短横线分隔命名) 是最通用的使用约定
+<ul><li>组件名应该始终是多个单词的，根组件 App 除外</li> <li>有意义的名词、简短、具有可读性</li> <li>命名遵循 PascalCase 约定
+<ul><li>公用组件以 Abcd (公司名缩写简称) 开头，如（AbcdDatePicker,AbcdTable）</li> <li>页面内部组件以组件模块名简写为开头，Item 为结尾，如（StaffBenchToChargeItem，StaffBenchAppNotArrItem）</li></ul></li> <li>使用遵循 kebab-case 约定
+<ul><li>在页面中使用组件需要前后闭合，并以短线分隔，如（<abcd-date-picker></abcd-date-picker>，<abcd-table></abcd-table>）</li></ul></li> <li>导入及注册组件时，遵循 PascalCase 约定</li> <li>同时注意:必须符合自定义元素规范:切勿使用保留字</li></ul></li></ul> <h3 id="method方法命名"><a href="#method方法命名" aria-hidden="true" class="header-anchor">#</a> method方法命名</h3> <ul><li>驼峰式命名，统一使用动词或者动词+名词形式</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">//bad</span>
+go、nextPage、show、open、login
+
+  <span class="token comment">// good</span>
+jumpPage、openCarInfoDialog
+</code></pre></div><ul><li>请求数据方法，以 data 结尾</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">//bad</span>
+takeData、confirmData、getList、postForm
+
+<span class="token comment">// good</span>
+getListData、postFormData
+</code></pre></div><ul><li>init、refresh 单词除外</li> <li>尽量使用常用单词开头（set、get、go、can、has、is）<br>
+常用的动词<div class="language- extra-class"><pre class="language-text"><code>get 获取/set 设置,
+add 增加/remove 删除
+create 创建/destory 移除
+start 启动/stop 停止
+open 打开/close 关闭,
+read 读取/write 写入
+load 载入/save 保存,
+create 创建/destroy 销毁
+begin 开始/end 结束,
+backup 备份/restore 恢复
+import 导入/export 导出,
+split 分割/merge 合并
+inject 注入/extract 提取,
+attach 附着/detach 脱离
+bind 绑定/separate 分离,
+view 查看/browse 浏览
+edit 编辑/modify 修改,
+select 选取/mark 标记
+copy 复制/paste 粘贴,
+undo 撤销/redo 重做
+insert 插入/delete 移除,
+add 加入/append 添加
+clean 清理/clear 清除,
+index 索引/sort 排序
+find 查找/search 搜索,
+increase 增加/decrease 减少
+play 播放/pause 暂停,
+launch 启动/run 运行
+compile 编译/execute 执行,
+debug 调试/trace 跟踪
+observe 观察/listen 监听,
+build 构建/publish 发布
+input 输入/output 输出,
+encode 编码/decode 解码
+encrypt 加密/decrypt 解密,
+compress 压缩/decompress 解压缩
+pack 打包/unpack 解包,
+parse 解析/emit 生成
+connect 连接/disconnect 断开,
+send 发送/receive 接收
+download 下载/upload 上传,
+refresh 刷新/synchronize 同步
+update 更新/revert 复原,
+lock 锁定/unlock 解锁
+check out 签出/check in 签入,
+submit 提交/commit 交付
+push 推/pull 拉,
+expand 展开/collapse 折叠
+begin 起始/end 结束,
+start 开始/finish 完成
+enter 进入/exit 退出,
+abort 放弃/quit 离开
+obsolete 废弃/depreciate 废旧,
+collect 收集/aggregate 聚集
+</code></pre></div></li></ul> <h3 id="views下文件命名"><a href="#views下文件命名" aria-hidden="true" class="header-anchor">#</a> views下文件命名</h3> <ul><li>只有一个文件的情况下不会出现文件夹，而是直接放在 views 目录下面，如 index.vue</li> <li>尽量是名词,且使用驼峰命名法</li> <li>开头的单词就是所属模块名字（workbenchIndex、workbenchList、workbenchEdit）</li> <li>名字至少两个单词（good: workbenchIndex）（bad:workbench）</li></ul> <h3 id="props-命名"><a href="#props-命名" aria-hidden="true" class="header-anchor">#</a> props 命名</h3> <ul><li>应该始终使用 camelCase，而在模板中应该始终使用 kebab-case</li></ul> <div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  <span class="token string">'greeting-text'</span><span class="token punctuation">:</span> String
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+ 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>welcome-message</span> <span class="token attr-name">greetingText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hi<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>welcome-message</span><span class="token punctuation">&gt;</span></span>
+ 
+<span class="token comment">&lt;!-- good --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  greetingText<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+ 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>welcome-message</span> <span class="token attr-name">greeting-text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hi<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>welcome-message</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>例外
+<ul><li>作用域不大临时变量可以简写，比如：str，num，bol，obj，fun，arr。</li> <li>循环变量可以简写，比如：i，j，k 等</li></ul></li></ul> <h3 id="目录文件夹及子文件规范"><a href="#目录文件夹及子文件规范" aria-hidden="true" class="header-anchor">#</a> 目录文件夹及子文件规范</h3> <ul><li>以下统一管理处均对应相应模块</li> <li>以下全局文件文件均以 index.js 导出，并在 main.js 中导入</li> <li>以下临时文件，在使用后，接口已经有了，发版后清除</li></ul> <div class="language- extra-class"><pre class="language-text"><code>src                               源码目录
+|-- api                              接口，统一管理
+|-- assets                           静态资源，统一管理
+|-- components                       公用组件，全局文件
+|-- filters                          过滤器，全局工具
+|-- icons                            图标，全局资源
+|-- datas                            模拟数据，临时存放
+|-- lib                              外部引用的插件存放及修改文件
+|-- mock                             模拟接口，临时存放
+|-- router                           路由，统一管理
+|-- store                            vuex, 统一管理
+|-- views                         视图目录
+|   |-- staffWorkbench               视图模块名
+|   |-- |-- staffWorkbench.vue       模块入口页面
+|   |-- |-- indexComponents          模块页面级组件文件夹
+|   |-- |-- components               模块通用组件文件夹
+</code></pre></div><h3 id="vue文件基本结构"><a href="#vue文件基本结构" aria-hidden="true" class="header-anchor">#</a> vue文件基本结构</h3> <div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!--必须在div中编写页面--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>，
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!--声明语言，并且添加scoped--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="多个特性的元素规范"><a href="#多个特性的元素规范" aria-hidden="true" class="header-anchor">#</a> 多个特性的元素规范</h3> <p>分多行撰写，每个特性一行</p> <div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://vuejs.org/images/logo.png<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Vue Logo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span> <span class="token attr-name">foo</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>a<span class="token punctuation">&quot;</span></span> <span class="token attr-name">bar</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>b<span class="token punctuation">&quot;</span></span> <span class="token attr-name">baz</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>c<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
+ 
+<span class="token comment">&lt;!-- good --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span>
+  <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://vuejs.org/images/logo.png<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Vue Logo<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span>
+  <span class="token attr-name">foo</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>a<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">bar</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>b<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">baz</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>c<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="元素特性顺序"><a href="#元素特性顺序" aria-hidden="true" class="header-anchor">#</a> 元素特性顺序</h3> <p>原生在前,指令在后</p> <div class="language- extra-class"><pre class="language-text"><code>- class
+- id,ref
+- name
+- data-*
+- src, for, type, href,value,max-length,max,min,pattern
+- title, alt，placeholder
+- aria-*, role
+- required,readonly,disabled
+- is
+- v-for
+- key
+- v-if
+- v-else-if
+- v-else
+- v-show
+- v-cloak
+- v-pre
+- v-once
+- v-model
+- v-bind,:
+- v-on,@
+- v-html
+- v-text
+</code></pre></div><h3 id="组件选项顺序"><a href="#组件选项顺序" aria-hidden="true" class="header-anchor">#</a> 组件选项顺序</h3> <div class="language- extra-class"><pre class="language-text"><code>- components
+- props
+- data
+- computed
+- created
+- mounted
+- metods
+- filter
+- watch
+</code></pre></div><h3 id="注释规范"><a href="#注释规范" aria-hidden="true" class="header-anchor">#</a> 注释规范</h3> <h4 id="注释列表"><a href="#注释列表" aria-hidden="true" class="header-anchor">#</a> 注释列表</h4> <ul><li>公共组件使用说明</li> <li>各组件中重要函数或者类说明</li> <li>复杂的业务逻辑处理说明</li> <li>特殊情况的代码处理说明,对于代码中特殊用途的变量、存在临界值、函数中使用的 hack、使用了某种算法或思路等需要进行注释描述</li> <li>多重 if 判断语句</li> <li>注释块必须以/**（至少两个星号）开头**/</li> <li>单行注释使用//</li></ul> <h4 id="单行注释"><a href="#单行注释" aria-hidden="true" class="header-anchor">#</a> 单行注释</h4> <p>不要在代码后的同一行内加注释</p> <div class="language-js extra-class"><pre class="language-js"><code>
+bad
+
+<span class="token keyword">var</span> name <span class="token operator">=</span>”abc”<span class="token punctuation">;</span> <span class="token comment">// 姓名    </span>
+
+good
+
+<span class="token comment">// 姓名</span>
+<span class="token keyword">var</span> name <span class="token operator">=</span> “abc”<span class="token punctuation">;</span>         
+</code></pre></div><h4 id="多行注释"><a href="#多行注释" aria-hidden="true" class="header-anchor">#</a> 多行注释</h4> <div class="language-js extra-class"><pre class="language-js"><code>
+组件使用说明，和调用说明
+<span class="token comment">/**
+* 组件名称
+* @module 组件存放位置
+* @desc 组件描述
+* @author 组件作者
+* @date 2020年03月27日12:22:43
+* @param {Object} [title]    - 参数说明
+* @param {String} [columns] - 参数说明
+* @example 调用示例
+*  &lt;hbTable :title=&quot;title&quot; :columns=&quot;columns&quot; :tableData=&quot;tableData&quot;&gt;&lt;/hbTable&gt;
+**/</span>
+</code></pre></div><h3 id="编码规范"><a href="#编码规范" aria-hidden="true" class="header-anchor">#</a> 编码规范</h3> <h4 id="源码风格"><a href="#源码风格" aria-hidden="true" class="header-anchor">#</a> 源码风格</h4> <p>使用 ES6 风格编码</p> <ul><li>定义变量使用 let ,定义常量使用 const</li> <li>静态字符串一律使用单引号或反引号，动态字符串使用反引号</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">// bad</span>
+<span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token string">'foobar'</span>
+<span class="token keyword">const</span> b <span class="token operator">=</span> <span class="token string">'foo'</span> <span class="token operator">+</span> a <span class="token operator">+</span> <span class="token string">'bar'</span>
+
+<span class="token comment">// acceptable</span>
+<span class="token keyword">const</span> c <span class="token operator">=</span> <span class="token template-string"><span class="token string">`foobar`</span></span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token string">'foobar'</span>
+<span class="token keyword">const</span> b <span class="token operator">=</span> <span class="token template-string"><span class="token string">`foo</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>a<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">bar`</span></span>
+<span class="token keyword">const</span> c <span class="token operator">=</span> <span class="token string">'foobar'</span>
+</code></pre></div><ul><li>解构赋值
+<ul><li>数组成员对变量赋值时，优先使用解构赋值</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">// 数组解构赋值</span>
+<span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+<span class="token comment">// bad</span>
+<span class="token keyword">const</span> first <span class="token operator">=</span> arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> second <span class="token operator">=</span> arr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">const</span> <span class="token punctuation">[</span>first<span class="token punctuation">,</span> second<span class="token punctuation">]</span> <span class="token operator">=</span> arr
+</code></pre></div><ul><li>函数的参数如果是对象的成员，优先使用解构赋值</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">// 对象解构赋值</span>
+<span class="token comment">// bad</span>
+<span class="token keyword">function</span> <span class="token function">getFullName</span><span class="token punctuation">(</span><span class="token parameter">user</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> firstName <span class="token operator">=</span> user<span class="token punctuation">.</span>firstName
+  <span class="token keyword">const</span> lastName <span class="token operator">=</span> user<span class="token punctuation">.</span>lastName
+<span class="token punctuation">}</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">function</span> <span class="token function">getFullName</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> firstName<span class="token punctuation">,</span> lastName <span class="token punctuation">}</span> <span class="token operator">=</span> obj
+<span class="token punctuation">}</span>
+
+<span class="token comment">// best</span>
+<span class="token keyword">function</span> <span class="token function">getFullName</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> firstName<span class="token punctuation">,</span> lastName <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><ul><li>拷贝数组:用扩展运算符（...）拷贝数组</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">const</span> items <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+
+<span class="token comment">// bad</span>
+<span class="token keyword">const</span> itemsCopy <span class="token operator">=</span> items
+
+<span class="token comment">// good</span>
+<span class="token keyword">const</span> itemsCopy <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>items<span class="token punctuation">]</span>
+</code></pre></div><ul><li>箭头函数(需要使用函数表达式的场合，尽量用箭头函数代替。因为这样更简洁，而且绑定了 this)</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">// bad</span>
+<span class="token keyword">const</span> self <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">boundMethod</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">method</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// acceptable</span>
+<span class="token keyword">const</span> boundMethod <span class="token operator">=</span> <span class="token function">method</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// best</span>
+<span class="token keyword">const</span> <span class="token function-variable function">boundMethod</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">method</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>模块
+<ul><li>如果模块只有一个输出值，就使用 export default，如果模块有多个输出值，就不使用 export default，export default 与普通的 export 不要同时使用</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">// bad</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> myObject <span class="token keyword">from</span> <span class="token string">'./importModule'</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">import</span> myObject <span class="token keyword">from</span> <span class="token string">'./importModule'</span>
+</code></pre></div><ul><li>如果模块默认输出一个函数，函数名的首字母应该小写</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">function</span> <span class="token function">makeStyleGuide</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> makeStyleGuide<span class="token punctuation">;</span>
+</code></pre></div><ul><li>如果模块默认输出一个对象，对象名的首字母应该大写</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">const</span> StyleGuide <span class="token operator">=</span> <span class="token punctuation">{</span>
+  es6<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> StyleGuide<span class="token punctuation">;</span>
+</code></pre></div></li></ul></li></ul> <h3 id="指令规范"><a href="#指令规范" aria-hidden="true" class="header-anchor">#</a> 指令规范</h3> <p>有缩写一律采用缩写</p> <div class="language-html extra-class"><pre class="language-html"><code>
+// bad
+v-bind:class=&quot;{'show-left'：true}&quot;
+v-on:click=&quot;getListData&quot;
+
+// good
+:class=&quot;{'show-left'：true}&quot;
+@click=&quot;getListData&quot;
+</code></pre></div><p>v-for 循环必须加上 key 属性，在整个 for 循环中 key 需要唯一</p> <div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token comment">&lt;!-- good --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>todo in todos<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>todo.id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    {{ todo.text }}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>todo in todos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    {{ todo.text }}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>避免 v-if 和 v-for 同时用在一个元素上（性能问题）</p> <ul><li>将数据替换为一个计算属性，让其返回过滤后的列表<div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user in users<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user.isActive<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user.id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    {{ user.name }}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- good --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user in activeUsers<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user.id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    {{ user.name }}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">activeUsers</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>users<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">user</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> user<span class="token punctuation">.</span>isActive
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></li> <li>将 v-if 移动至容器元素上 (比如 ul, ol)<div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user in users<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>shouldShowUsers<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user.id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    {{ user.name }}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- good --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>shouldShowUsers<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user in users<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user.id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    {{ user.name }}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></li></ul> <h3 id="props-规范"><a href="#props-规范" aria-hidden="true" class="header-anchor">#</a> Props 规范</h3> <ul><li>定义应尽量详细</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">// bad 这样做只有开发原型系统时可以接受</span>
+props<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'status'</span><span class="token punctuation">]</span>
+ 
+<span class="token comment">// good</span>
+props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  status<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+    required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">validator</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">[</span>
+        <span class="token string">'syncing'</span><span class="token punctuation">,</span>
+        <span class="token string">'synced'</span><span class="token punctuation">,</span>
+        <span class="token string">'version-conflict'</span><span class="token punctuation">,</span>
+        <span class="token string">'error'</span>
+      <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>避免 this.$parent</li> <li>调试信息 console.log() debugger 使用完及时删除</li> <li>除了三目运算，if,else 等禁止简写</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">// bad</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// bad</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="css-规范"><a href="#css-规范" aria-hidden="true" class="header-anchor">#</a> CSS 规范</h3> <p>通用</p> <ul><li>统一使用&quot;-&quot;连字符</li> <li>省略值为 0 时的单位<div class="language-css extra-class"><pre class="language-css"><code>
+ // bad
+<span class="token property">padding-bottom</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+<span class="token property">margin</span><span class="token punctuation">:</span> 0em<span class="token punctuation">;</span>
+
+// good
+<span class="token property">padding-bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+</code></pre></div></li> <li>CSS 可以做到，就不要使用 JS</li> <li>适当缩写值，提高可读性(并不希望设置某一值，反而造成了麻烦时可以不缩写)<div class="language-css extra-class"><pre class="language-css"><code>
+<span class="token selector">// bad
+.box</span><span class="token punctuation">{</span>
+  <span class="token property">border-top-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> palatino<span class="token punctuation">,</span> georgia<span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 1.6<span class="token punctuation">;</span>
+  <span class="token property">padding-bottom</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
+  <span class="token property">padding-left</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+  <span class="token property">padding-right</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+  <span class="token property">padding-top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">// good
+.box</span><span class="token punctuation">{</span>
+  <span class="token property">border-top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">font</span><span class="token punctuation">:</span> 100%/1.6 palatino<span class="token punctuation">,</span> georgia<span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0 1em 2em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li>声明顺序</li></ul> <table><thead><tr><th>显示属性</th> <th>自身属性</th> <th>文本属性和其他修饰</th></tr></thead> <tbody><tr><td>display</td> <td>width</td> <td>font</td></tr> <tr><td>visibility</td> <td>height</td> <td>text-align</td></tr> <tr><td>position</td> <td>margin</td> <td>text-decoration</td></tr> <tr><td>float</td> <td>padding</td> <td>vertical-align</td></tr> <tr><td>clear</td> <td>border</td> <td>white-space</td></tr> <tr><td>list-style</td> <td>overflow</td> <td>color</td></tr> <tr><td>top</td> <td>min-width</td> <td>background</td></tr></tbody></table> <ul><li>元素选择器应该避免在 scoped 中出现
+<ul><li>官方文档说明:在 scoped 样式中，类选择器比元素选择器更好，因为大量使用元素选择器是很慢的</li></ul></li> <li>分类的命名方法(使用单个字母加上&quot;-&quot;为前缀)
+<ul><li>布局（grid）（.g-）</li> <li>模块（module）（.m-）</li> <li>元件（unit）（.u-）</li> <li>功能（function）（.f-）</li> <li>皮肤（skin）（.s-）</li> <li>状态（.z-）</li></ul></li> <li>统一语义理解和命名<br>
+布局（.g-）</li></ul> <table><thead><tr><th>语义</th> <th>命名</th> <th>简写</th></tr></thead> <tbody><tr><td>文档</td> <td>doc</td> <td>doc</td></tr> <tr><td>头部</td> <td>head</td> <td>hd</td></tr> <tr><td>主体</td> <td>body</td> <td>bd</td></tr> <tr><td>尾部</td> <td>foot</td> <td>ft</td></tr> <tr><td>主栏</td> <td>main</td> <td>mn</td></tr> <tr><td>主栏子容器</td> <td>mainc</td> <td>mnc</td></tr> <tr><td>侧栏</td> <td>side</td> <td>sd</td></tr> <tr><td>侧栏子容器</td> <td>sidec</td> <td>sdc</td></tr> <tr><td>盒容器</td> <td>wrap/box</td> <td>wrap/box</td></tr></tbody></table> <h3 id="sass-规范"><a href="#sass-规范" aria-hidden="true" class="header-anchor">#</a> SASS 规范</h3> <p>嵌套顺序</p> <ul><li>当前选择器的样式属性</li> <li>父级选择器的伪类选择器 (:first-letter, :hover, :active etc)</li> <li>伪类元素 (:before and :after)</li> <li>父级选择器的声明样式 (.selected, .active, .enlarged etc.)</li> <li>用 Sass 的上下文媒体查询</li> <li>子选择器作为最后的部分</li></ul> <div class="language-css extra-class"><pre class="language-css"><code>
+<span class="token selector">.product-teaser</span> <span class="token punctuation">{</span>
+  // 1. Style attributes
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> whitesmoke<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> grey<span class="token selector">;
+
+  // 2. Pseudo selectors with parent selector
+  &amp;:hover</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">// 3. Pseudo elements with parent selector
+  &amp;:before</span> <span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+    <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid grey<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">&amp;:after</span> <span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+    <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid grey<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">// 4. State classes with parent selector
+  &amp;.active</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token selector">;
+
+    // 4.2. Pseuso selector in state class selector
+    &amp;:hover</span> <span class="token punctuation">{</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> darkred<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  // 5. Contextual media queries
+  <span class="token atrule"><span class="token rule">@media</span> screen and <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 640px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">// 6. Sub selectors
+  &gt; .content &gt; .title</span> <span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">;</span>
+
+    // 6.5. Contextual media queries in sub selector
+    <span class="token atrule"><span class="token rule">@media</span> screen and <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 640px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+      <span class="token property">letter-spacing</span><span class="token punctuation">:</span> 0.2em<span class="token punctuation">;</span>
+      <span class="token property">text-transform</span><span class="token punctuation">:</span> uppercase<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="特殊规范"><a href="#特殊规范" aria-hidden="true" class="header-anchor">#</a> 特殊规范</h3> <ul><li>对用页面级组件样式，应该是有作用域的</li> <li>对于公用组件或者全局组件库，我们应该更倾向于选用基于 class 的 BEM 策略</li></ul> <div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>scss<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span> // bad
+
+<span class="token comment">&lt;!-- 使用 scoped 作用域 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>scss<span class="token punctuation">'</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span> // good
+
+<span class="token comment">&lt;!-- 使用 BEM 约定 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css"> <span class="token selector">// good
+.c-Button</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 2px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.c-Button--close</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div> <div class="article-link">
+      本文链接:
+      <a target="_blank" class="art-add"></a></div> <div class="article-link">
+      版权声明:本博客所有文章除特别声明外,均采用
+      <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">CC BY-NC-ND 3.0</a> 许可协议。可自由转载、引用，但需署名作者且注明文章出处。如转载至微信公众号，请在文末添加作者公众号二维码。
+    </div> <div class="dashang"><button type="button" class="el-button el-button--warning"><i class="fa fa-jpy"></i>打赏
+      </button></div> <div class="el-dialog__wrapper" style="z-index:10000;background:rgba(0,0,0,.3);display:none;"><div role="dialog" aria-modal="true" aria-label="觉得文章有用就打赏一下文章作者呗~" class="el-dialog el-dialog--center" style="margin-top:15vh;width:40%;"><div class="el-dialog__header"><span class="el-dialog__title">觉得文章有用就打赏一下文章作者呗~</span> <button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div> <div class="el-dialog__body"><div class="award-box"><div class="award"><h4 class="tip">支付宝扫一扫打赏</h4> <img src="/images/alipay.png"></div> <div class="award"><h4 class="tip">微信扫一扫打赏</h4> <img src="/images/wxpay.jpg"></div></div></div></div></div> <div class="pop-code"><span role="img" aria-label="qrcode" class="anticon anticon-qrcode"><svg viewBox="64 64 896 896" focusable="false" data-icon="qrcode" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M468 128H160c-17.7 0-32 14.3-32 32v308c0 4.4 3.6 8 8 8h332c4.4 0 8-3.6 8-8V136c0-4.4-3.6-8-8-8zm-56 284H192V192h220v220zm-138-74h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm194 210H136c-4.4 0-8 3.6-8 8v308c0 17.7 14.3 32 32 32h308c4.4 0 8-3.6 8-8V556c0-4.4-3.6-8-8-8zm-56 284H192V612h220v220zm-138-74h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm590-630H556c-4.4 0-8 3.6-8 8v332c0 4.4 3.6 8 8 8h332c4.4 0 8-3.6 8-8V160c0-17.7-14.3-32-32-32zm-32 284H612V192h220v220zm-138-74h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm194 210h-48c-4.4 0-8 3.6-8 8v134h-78V556c0-4.4-3.6-8-8-8H556c-4.4 0-8 3.6-8 8v332c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V644h78v102c0 4.4 3.6 8 8 8h190c4.4 0 8-3.6 8-8V556c0-4.4-3.6-8-8-8zM746 832h-48c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zm142 0h-48c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8z"></path></svg></span> <div class="ant-popover"><div class="ant-popover-content"><div class="ant-popover-arrow"><span class="ant-popover-arrow-content"></span></div> <div class="ant-popover-inner"><div class="ant-popover-inner-content"><div><div type="flex" class="ant-row ant-row-space-around"><div class="ant-col ant-col-24"><h3>扫描下方二维码阅读当前文章</h3></div></div> <div type="flex" class="ant-row ant-row-space-around"><div class="ant-col ant-col-11"><!----> <span class="side">浏览器、微信扫码</span></div> <div class="ant-col ant-col-11"><img src="" class="img"> <span class="side">微信小程序</span></div></div></div></div></div></div></div></div> <div class="content page-nav"><p class="inner"><span class="prev">
+          ←
+          <a href="/blog/element_fengzhuang.html" class="prev">vue项目element-ui消息提示框及确认弹框封装</a></span> <span class="next"><a href="/blog/vue-router_setting.html">vue-router路由配置方法</a>→
+        </span></p></div> <div class="page"><section class="page-edit"><div><span data-flag-title="Your Article Title" class="leancloud-visitors"><em class="post-meta-item-text">阅读量：</em> <i class="leancloud-visitors-count"></i></span></div> <h3><a href="javascript:;"></a>
+      评 论：
+    </h3> <div id="vcomments"></div></section></div></div></div> <div class="tool-group"><div class="card-box"><div class="card rec-card"><div class="wb-tt"><span><i class="fa fa-fire"></i>好文推荐
+      </span></div> <div class="rec-info"></div> <!----></div></div> <div class="card wxgh-card"><div class="tip"><div class="tip-txt">
+        极客之路公众号
+        <div class="wxgh-img"><img src="http://cdn.xuedingmiao.com/wxgzhbtf.png"></div></div></div> <div class="gifts"></div></div> <div class="card wxnews-card"><div class="wb-tt"><span><i class="fa fa-wechat"></i>微信情报
+      </span> <a href="/wxnews/" class="more">更多 &gt;</a></div> <div class="loading" style="display:none;">
+      加载中 ^_^
+      <i class="fa fa-spinner fa-spin"></i></div> <ul class="wb-info"></ul></div></div></div> <div class="blog-footer"><div>Copyright ©2020 设计师: 薛定喵君. All Rights Reserved</div> <a href="http://www.beian.miit.gov.cn" target="_blank" class="beian">苏ICP备16010590号-1</a> <div class="visit-data"></div></div></div> <footer class="footer pc"><span>每天进步一点点~</span> <span class="news"></span></footer></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.47b5db94.js" defer></script><script src="/assets/js/18.b7fe2699.js" defer></script><script src="/assets/js/9.7c76d012.js" defer></script><script src="/assets/js/35.b0ffd568.js" defer></script><script src="/assets/js/53.5b971407.js" defer></script><script src="/assets/js/45.ecd9ee2b.js" defer></script><script src="/assets/js/113.268793e4.js" defer></script><script src="/assets/js/62.615af82f.js" defer></script><script src="/assets/js/7.b045ac4a.js" defer></script>
+  </body>
+</html>
